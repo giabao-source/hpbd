@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Matrix Birthday Rain</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+  <canvas id="matrixCanvas"></canvas>
+  <script src="./style/script.js"></script>
+  <img id="birthdayImage" src="./style/avatar.jpg" alt="Gia Bảo" style="
+  display: none; /* ✅ ẩn ban đầu */
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  border-radius: 18px;
+  border: 3px solid white;
+  z-index: 10;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+">
+<audio id="bgm" loop>
+  <source src="./style/happybirthday.mp3" type="audio/mpeg">
+</audio>
+
+<button onclick="toggleMusic()" style="
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 999;
+  padding: 10px 20px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: 1px solid white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: monospace;
+">🎵 Phát Nhạc</button>
+</body>
+</html>
